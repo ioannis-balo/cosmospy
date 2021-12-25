@@ -12,19 +12,18 @@ from google.protobuf import symbol_database as _symbol_database
 
 _sym_db = _symbol_database.Default()
 
-
 DESCRIPTOR = _descriptor.FileDescriptor(
     name="pubkey.proto",
     package="cosmos.crypto.secp256k1",
     syntax="proto3",
     serialized_options=b"Z2github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1",
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\n\x0cpubkey.proto\x12\x17\x63osmos.crypto.secp256k1\x1a\ngogo.proto"\x1b\n\x06PubKey\x12\x0b\n\x03key\x18\x01 \x01(\x0c:\x04\x98\xa0\x1f\x00\x42\x34Z2github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1b\x06proto3',
+    serialized_pb=
+    b'\n\x0cpubkey.proto\x12\x17\x63osmos.crypto.secp256k1\x1a\ngogo.proto"\x1b\n\x06PubKey\x12\x0b\n\x03key\x18\x01 \x01(\x0c:\x04\x98\xa0\x1f\x00\x42\x34Z2github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1b\x06proto3',
     dependencies=[
         gogo__pb2.DESCRIPTOR,
     ],
 )
-
 
 _PUBKEY = _descriptor.Descriptor(
     name="PubKey",
@@ -71,7 +70,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 PubKey = _reflection.GeneratedProtocolMessageType(
     "PubKey",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _PUBKEY,
         "__module__": "pubkey_pb2"
@@ -79,7 +78,6 @@ PubKey = _reflection.GeneratedProtocolMessageType(
     },
 )
 _sym_db.RegisterMessage(PubKey)
-
 
 DESCRIPTOR._options = None
 _PUBKEY._options = None

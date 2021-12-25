@@ -12,19 +12,19 @@ from google.protobuf import symbol_database as _symbol_database
 
 _sym_db = _symbol_database.Default()
 
-
 DESCRIPTOR = _descriptor.FileDescriptor(
     name="any.proto",
     package="google.protobuf",
     syntax="proto3",
-    serialized_options=b"\n\023com.google.protobufB\010AnyProtoP\001Z\005types\242\002\003GPB\252\002\036Google.Protobuf.WellKnownTypes\300\343\036\000",
+    serialized_options=
+    b"\n\023com.google.protobufB\010AnyProtoP\001Z\005types\242\002\003GPB\252\002\036Google.Protobuf.WellKnownTypes\300\343\036\000",
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\n\tany.proto\x12\x0fgoogle.protobuf\x1a\ngogo.proto",\n\x03\x41ny\x12\x10\n\x08type_url\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x0c:\x04\xf0\xa1\x1f\x00\x42S\n\x13\x63om.google.protobufB\x08\x41nyProtoP\x01Z\x05types\xa2\x02\x03GPB\xaa\x02\x1eGoogle.Protobuf.WellKnownTypes\xc0\xe3\x1e\x00\x62\x06proto3',
+    serialized_pb=
+    b'\n\tany.proto\x12\x0fgoogle.protobuf\x1a\ngogo.proto",\n\x03\x41ny\x12\x10\n\x08type_url\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x0c:\x04\xf0\xa1\x1f\x00\x42S\n\x13\x63om.google.protobufB\x08\x41nyProtoP\x01Z\x05types\xa2\x02\x03GPB\xaa\x02\x1eGoogle.Protobuf.WellKnownTypes\xc0\xe3\x1e\x00\x62\x06proto3',
     dependencies=[
         gogo__pb2.DESCRIPTOR,
     ],
 )
-
 
 _ANY = _descriptor.Descriptor(
     name="Any",
@@ -90,7 +90,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Any = _reflection.GeneratedProtocolMessageType(
     "Any",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _ANY,
         "__module__": "any_pb2"
@@ -98,7 +98,6 @@ Any = _reflection.GeneratedProtocolMessageType(
     },
 )
 _sym_db.RegisterMessage(Any)
-
 
 DESCRIPTOR._options = None
 _ANY._options = None

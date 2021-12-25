@@ -6,10 +6,10 @@ if sys.version_info < (3, 8):
 else:
     from typing import Literal, TypedDict
 
-
 # Valid transaction broadcast modes for the TX endpoint of the
 # Cosmos REST API.
-SyncMode = Literal["broadcast_tx_sync", "broadcast_tx_async", "broadcast_tx_commit"]
+SyncMode = Literal["broadcast_tx_sync", "broadcast_tx_async",
+                   "broadcast_tx_commit"]
 
 
 class Wallet(TypedDict):

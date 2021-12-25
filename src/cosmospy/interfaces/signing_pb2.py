@@ -13,14 +13,14 @@ from google.protobuf.internal import enum_type_wrapper
 
 _sym_db = _symbol_database.Default()
 
-
 DESCRIPTOR = _descriptor.FileDescriptor(
     name="signing.proto",
     package="cosmos.tx.signing.v1beta1",
     syntax="proto3",
     serialized_options=b"Z-github.com/cosmos/cosmos-sdk/types/tx/signing",
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\n\rsigning.proto\x12\x19\x63osmos.tx.signing.v1beta1\x1a\tany.proto"Z\n\x14SignatureDescriptors\x12\x42\n\nsignatures\x18\x01 \x03(\x0b\x32..cosmos.tx.signing.v1beta1.SignatureDescriptor"\xc2\x02\n\x13SignatureDescriptor\x12(\n\npublic_key\x18\x01 \x01(\x0b\x32\x14.google.protobuf.Any\x12\x41\n\x04\x64\x61ta\x18\x02 \x01(\x0b\x32\x33.cosmos.tx.signing.v1beta1.SignatureDescriptor.Data\x12\x10\n\x08sequence\x18\x03 \x01(\x04\x1a\xab\x01\n\x04\x44\x61ta\x12L\n\x06single\x18\x01 \x01(\x0b\x32:.cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.SingleH\x00\x1aN\n\x06Single\x12\x31\n\x04mode\x18\x01 \x01(\x0e\x32#.cosmos.tx.signing.v1beta1.SignMode\x12\x11\n\tsignature\x18\x02 \x01(\x0c\x42\x05\n\x03sum*s\n\x08SignMode\x12\x19\n\x15SIGN_MODE_UNSPECIFIED\x10\x00\x12\x14\n\x10SIGN_MODE_DIRECT\x10\x01\x12\x15\n\x11SIGN_MODE_TEXTUAL\x10\x02\x12\x1f\n\x1bSIGN_MODE_LEGACY_AMINO_JSON\x10\x7f\x42/Z-github.com/cosmos/cosmos-sdk/types/tx/signingb\x06proto3',
+    serialized_pb=
+    b'\n\rsigning.proto\x12\x19\x63osmos.tx.signing.v1beta1\x1a\tany.proto"Z\n\x14SignatureDescriptors\x12\x42\n\nsignatures\x18\x01 \x03(\x0b\x32..cosmos.tx.signing.v1beta1.SignatureDescriptor"\xc2\x02\n\x13SignatureDescriptor\x12(\n\npublic_key\x18\x01 \x01(\x0b\x32\x14.google.protobuf.Any\x12\x41\n\x04\x64\x61ta\x18\x02 \x01(\x0b\x32\x33.cosmos.tx.signing.v1beta1.SignatureDescriptor.Data\x12\x10\n\x08sequence\x18\x03 \x01(\x04\x1a\xab\x01\n\x04\x44\x61ta\x12L\n\x06single\x18\x01 \x01(\x0b\x32:.cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.SingleH\x00\x1aN\n\x06Single\x12\x31\n\x04mode\x18\x01 \x01(\x0e\x32#.cosmos.tx.signing.v1beta1.SignMode\x12\x11\n\tsignature\x18\x02 \x01(\x0c\x42\x05\n\x03sum*s\n\x08SignMode\x12\x19\n\x15SIGN_MODE_UNSPECIFIED\x10\x00\x12\x14\n\x10SIGN_MODE_DIRECT\x10\x01\x12\x15\n\x11SIGN_MODE_TEXTUAL\x10\x02\x12\x1f\n\x1bSIGN_MODE_LEGACY_AMINO_JSON\x10\x7f\x42/Z-github.com/cosmos/cosmos-sdk/types/tx/signingb\x06proto3',
     dependencies=[
         any__pb2.DESCRIPTOR,
     ],
@@ -79,7 +79,6 @@ SIGN_MODE_DIRECT = 1
 SIGN_MODE_TEXTUAL = 2
 SIGN_MODE_LEGACY_AMINO_JSON = 127
 
-
 _SIGNATUREDESCRIPTORS = _descriptor.Descriptor(
     name="SignatureDescriptors",
     full_name="cosmos.tx.signing.v1beta1.SignatureDescriptors",
@@ -90,7 +89,8 @@ _SIGNATUREDESCRIPTORS = _descriptor.Descriptor(
     fields=[
         _descriptor.FieldDescriptor(
             name="signatures",
-            full_name="cosmos.tx.signing.v1beta1.SignatureDescriptors.signatures",
+            full_name=
+            "cosmos.tx.signing.v1beta1.SignatureDescriptors.signatures",
             index=0,
             number=1,
             type=11,
@@ -120,7 +120,6 @@ _SIGNATUREDESCRIPTORS = _descriptor.Descriptor(
     serialized_end=145,
 )
 
-
 _SIGNATUREDESCRIPTOR_DATA_SINGLE = _descriptor.Descriptor(
     name="Single",
     full_name="cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.Single",
@@ -131,7 +130,8 @@ _SIGNATUREDESCRIPTOR_DATA_SINGLE = _descriptor.Descriptor(
     fields=[
         _descriptor.FieldDescriptor(
             name="mode",
-            full_name="cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.Single.mode",
+            full_name=
+            "cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.Single.mode",
             index=0,
             number=1,
             type=14,
@@ -150,7 +150,8 @@ _SIGNATUREDESCRIPTOR_DATA_SINGLE = _descriptor.Descriptor(
         ),
         _descriptor.FieldDescriptor(
             name="signature",
-            full_name="cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.Single.signature",
+            full_name=
+            "cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.Single.signature",
             index=1,
             number=2,
             type=12,
@@ -190,7 +191,8 @@ _SIGNATUREDESCRIPTOR_DATA = _descriptor.Descriptor(
     fields=[
         _descriptor.FieldDescriptor(
             name="single",
-            full_name="cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.single",
+            full_name=
+            "cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.single",
             index=0,
             number=1,
             type=11,
@@ -241,7 +243,8 @@ _SIGNATUREDESCRIPTOR = _descriptor.Descriptor(
     fields=[
         _descriptor.FieldDescriptor(
             name="public_key",
-            full_name="cosmos.tx.signing.v1beta1.SignatureDescriptor.public_key",
+            full_name=
+            "cosmos.tx.signing.v1beta1.SignatureDescriptor.public_key",
             index=0,
             number=1,
             type=11,
@@ -311,27 +314,30 @@ _SIGNATUREDESCRIPTOR = _descriptor.Descriptor(
     serialized_end=470,
 )
 
-_SIGNATUREDESCRIPTORS.fields_by_name["signatures"].message_type = _SIGNATUREDESCRIPTOR
+_SIGNATUREDESCRIPTORS.fields_by_name[
+    "signatures"].message_type = _SIGNATUREDESCRIPTOR
 _SIGNATUREDESCRIPTOR_DATA_SINGLE.fields_by_name["mode"].enum_type = _SIGNMODE
 _SIGNATUREDESCRIPTOR_DATA_SINGLE.containing_type = _SIGNATUREDESCRIPTOR_DATA
-_SIGNATUREDESCRIPTOR_DATA.fields_by_name["single"].message_type = _SIGNATUREDESCRIPTOR_DATA_SINGLE
+_SIGNATUREDESCRIPTOR_DATA.fields_by_name[
+    "single"].message_type = _SIGNATUREDESCRIPTOR_DATA_SINGLE
 _SIGNATUREDESCRIPTOR_DATA.containing_type = _SIGNATUREDESCRIPTOR
 _SIGNATUREDESCRIPTOR_DATA.oneofs_by_name["sum"].fields.append(
-    _SIGNATUREDESCRIPTOR_DATA.fields_by_name["single"]
-)
+    _SIGNATUREDESCRIPTOR_DATA.fields_by_name["single"])
 _SIGNATUREDESCRIPTOR_DATA.fields_by_name[
-    "single"
-].containing_oneof = _SIGNATUREDESCRIPTOR_DATA.oneofs_by_name["sum"]
+    "single"].containing_oneof = _SIGNATUREDESCRIPTOR_DATA.oneofs_by_name[
+        "sum"]
 _SIGNATUREDESCRIPTOR.fields_by_name["public_key"].message_type = any__pb2._ANY
-_SIGNATUREDESCRIPTOR.fields_by_name["data"].message_type = _SIGNATUREDESCRIPTOR_DATA
-DESCRIPTOR.message_types_by_name["SignatureDescriptors"] = _SIGNATUREDESCRIPTORS
+_SIGNATUREDESCRIPTOR.fields_by_name[
+    "data"].message_type = _SIGNATUREDESCRIPTOR_DATA
+DESCRIPTOR.message_types_by_name[
+    "SignatureDescriptors"] = _SIGNATUREDESCRIPTORS
 DESCRIPTOR.message_types_by_name["SignatureDescriptor"] = _SIGNATUREDESCRIPTOR
 DESCRIPTOR.enum_types_by_name["SignMode"] = _SIGNMODE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 SignatureDescriptors = _reflection.GeneratedProtocolMessageType(
     "SignatureDescriptors",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _SIGNATUREDESCRIPTORS,
         "__module__": "signing_pb2"
@@ -342,35 +348,40 @@ _sym_db.RegisterMessage(SignatureDescriptors)
 
 SignatureDescriptor = _reflection.GeneratedProtocolMessageType(
     "SignatureDescriptor",
-    (_message.Message,),
+    (_message.Message, ),
     {
-        "Data": _reflection.GeneratedProtocolMessageType(
+        "Data":
+        _reflection.GeneratedProtocolMessageType(
             "Data",
-            (_message.Message,),
+            (_message.Message, ),
             {
-                "Single": _reflection.GeneratedProtocolMessageType(
+                "Single":
+                _reflection.GeneratedProtocolMessageType(
                     "Single",
-                    (_message.Message,),
+                    (_message.Message, ),
                     {
                         "DESCRIPTOR": _SIGNATUREDESCRIPTOR_DATA_SINGLE,
                         "__module__": "signing_pb2"
                         # @@protoc_insertion_point(class_scope:cosmos.tx.signing.v1beta1.SignatureDescriptor.Data.Single)
                     },
                 ),
-                "DESCRIPTOR": _SIGNATUREDESCRIPTOR_DATA,
-                "__module__": "signing_pb2"
+                "DESCRIPTOR":
+                _SIGNATUREDESCRIPTOR_DATA,
+                "__module__":
+                "signing_pb2"
                 # @@protoc_insertion_point(class_scope:cosmos.tx.signing.v1beta1.SignatureDescriptor.Data)
             },
         ),
-        "DESCRIPTOR": _SIGNATUREDESCRIPTOR,
-        "__module__": "signing_pb2"
+        "DESCRIPTOR":
+        _SIGNATUREDESCRIPTOR,
+        "__module__":
+        "signing_pb2"
         # @@protoc_insertion_point(class_scope:cosmos.tx.signing.v1beta1.SignatureDescriptor)
     },
 )
 _sym_db.RegisterMessage(SignatureDescriptor)
 _sym_db.RegisterMessage(SignatureDescriptor.Data)
 _sym_db.RegisterMessage(SignatureDescriptor.Data.Single)
-
 
 DESCRIPTOR._options = None
 # @@protoc_insertion_point(module_scope)

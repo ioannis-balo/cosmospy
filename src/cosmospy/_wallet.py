@@ -11,9 +11,9 @@ DEFAULT_DERIVATION_PATH = "m/44'/118'/0'/0/0"
 DEFAULT_BECH32_HRP = "cosmos"
 
 
-def generate_wallet(
-    *, path: str = DEFAULT_DERIVATION_PATH, hrp: str = DEFAULT_BECH32_HRP
-) -> Wallet:
+def generate_wallet(*,
+                    path: str = DEFAULT_DERIVATION_PATH,
+                    hrp: str = DEFAULT_BECH32_HRP) -> Wallet:
     while True:
         phrase = mnemonic.Mnemonic(language="english").generate(strength=256)
         try:
@@ -62,6 +62,8 @@ def pubkey_to_address(pubkey: bytes, *, hrp: str = DEFAULT_BECH32_HRP) -> str:
     return bech32.bech32_encode(hrp, five_bit_r)
 
 
-def privkey_to_address(privkey: bytes, *, hrp: str = DEFAULT_BECH32_HRP) -> str:
+def privkey_to_address(privkey: bytes,
+                       *,
+                       hrp: str = DEFAULT_BECH32_HRP) -> str:
     pubkey = privkey_to_pubkey(privkey)
     return pubkey_to_address(pubkey, hrp=hrp)

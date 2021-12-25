@@ -15,14 +15,14 @@ from google.protobuf import symbol_database as _symbol_database
 
 _sym_db = _symbol_database.Default()
 
-
 DESCRIPTOR = _descriptor.FileDescriptor(
     name="tx.proto",
     package="cosmos.tx.v1beta1",
     syntax="proto3",
     serialized_options=b"Z%github.com/cosmos/cosmos-sdk/types/tx",
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\n\x08tx.proto\x12\x11\x63osmos.tx.v1beta1\x1a\ngogo.proto\x1a\ncoin.proto\x1a\rsigning.proto\x1a\tany.proto"q\n\x02Tx\x12\'\n\x04\x62ody\x18\x01 \x01(\x0b\x32\x19.cosmos.tx.v1beta1.TxBody\x12.\n\tauth_info\x18\x02 \x01(\x0b\x32\x1b.cosmos.tx.v1beta1.AuthInfo\x12\x12\n\nsignatures\x18\x03 \x03(\x0c"H\n\x05TxRaw\x12\x12\n\nbody_bytes\x18\x01 \x01(\x0c\x12\x17\n\x0f\x61uth_info_bytes\x18\x02 \x01(\x0c\x12\x12\n\nsignatures\x18\x03 \x03(\x0c"`\n\x07SignDoc\x12\x12\n\nbody_bytes\x18\x01 \x01(\x0c\x12\x17\n\x0f\x61uth_info_bytes\x18\x02 \x01(\x0c\x12\x10\n\x08\x63hain_id\x18\x03 \x01(\t\x12\x16\n\x0e\x61\x63\x63ount_number\x18\x04 \x01(\x04"\xc7\x01\n\x06TxBody\x12&\n\x08messages\x18\x01 \x03(\x0b\x32\x14.google.protobuf.Any\x12\x0c\n\x04memo\x18\x02 \x01(\t\x12\x16\n\x0etimeout_height\x18\x03 \x01(\x04\x12\x30\n\x11\x65xtension_options\x18\xff\x07 \x03(\x0b\x32\x14.google.protobuf.Any\x12=\n\x1enon_critical_extension_options\x18\xff\x0f \x03(\x0b\x32\x14.google.protobuf.Any"d\n\x08\x41uthInfo\x12\x33\n\x0csigner_infos\x18\x01 \x03(\x0b\x32\x1d.cosmos.tx.v1beta1.SignerInfo\x12#\n\x03\x66\x65\x65\x18\x02 \x01(\x0b\x32\x16.cosmos.tx.v1beta1.Fee"x\n\nSignerInfo\x12(\n\npublic_key\x18\x01 \x01(\x0b\x32\x14.google.protobuf.Any\x12.\n\tmode_info\x18\x02 \x01(\x0b\x32\x1b.cosmos.tx.v1beta1.ModeInfo\x12\x10\n\x08sequence\x18\x03 \x01(\x04"\x84\x01\n\x08ModeInfo\x12\x34\n\x06single\x18\x01 \x01(\x0b\x32".cosmos.tx.v1beta1.ModeInfo.SingleH\x00\x1a;\n\x06Single\x12\x31\n\x04mode\x18\x01 \x01(\x0e\x32#.cosmos.tx.signing.v1beta1.SignModeB\x05\n\x03sum"\x95\x01\n\x03\x46\x65\x65\x12[\n\x06\x61mount\x18\x01 \x03(\x0b\x32\x19.cosmos.base.v1beta1.CoinB0\xc8\xde\x1f\x00\xaa\xdf\x1f(github.com/cosmos/cosmos-sdk/types.Coins\x12\x11\n\tgas_limit\x18\x02 \x01(\x04\x12\r\n\x05payer\x18\x03 \x01(\t\x12\x0f\n\x07granter\x18\x04 \x01(\tB\'Z%github.com/cosmos/cosmos-sdk/types/txb\x06proto3',
+    serialized_pb=
+    b'\n\x08tx.proto\x12\x11\x63osmos.tx.v1beta1\x1a\ngogo.proto\x1a\ncoin.proto\x1a\rsigning.proto\x1a\tany.proto"q\n\x02Tx\x12\'\n\x04\x62ody\x18\x01 \x01(\x0b\x32\x19.cosmos.tx.v1beta1.TxBody\x12.\n\tauth_info\x18\x02 \x01(\x0b\x32\x1b.cosmos.tx.v1beta1.AuthInfo\x12\x12\n\nsignatures\x18\x03 \x03(\x0c"H\n\x05TxRaw\x12\x12\n\nbody_bytes\x18\x01 \x01(\x0c\x12\x17\n\x0f\x61uth_info_bytes\x18\x02 \x01(\x0c\x12\x12\n\nsignatures\x18\x03 \x03(\x0c"`\n\x07SignDoc\x12\x12\n\nbody_bytes\x18\x01 \x01(\x0c\x12\x17\n\x0f\x61uth_info_bytes\x18\x02 \x01(\x0c\x12\x10\n\x08\x63hain_id\x18\x03 \x01(\t\x12\x16\n\x0e\x61\x63\x63ount_number\x18\x04 \x01(\x04"\xc7\x01\n\x06TxBody\x12&\n\x08messages\x18\x01 \x03(\x0b\x32\x14.google.protobuf.Any\x12\x0c\n\x04memo\x18\x02 \x01(\t\x12\x16\n\x0etimeout_height\x18\x03 \x01(\x04\x12\x30\n\x11\x65xtension_options\x18\xff\x07 \x03(\x0b\x32\x14.google.protobuf.Any\x12=\n\x1enon_critical_extension_options\x18\xff\x0f \x03(\x0b\x32\x14.google.protobuf.Any"d\n\x08\x41uthInfo\x12\x33\n\x0csigner_infos\x18\x01 \x03(\x0b\x32\x1d.cosmos.tx.v1beta1.SignerInfo\x12#\n\x03\x66\x65\x65\x18\x02 \x01(\x0b\x32\x16.cosmos.tx.v1beta1.Fee"x\n\nSignerInfo\x12(\n\npublic_key\x18\x01 \x01(\x0b\x32\x14.google.protobuf.Any\x12.\n\tmode_info\x18\x02 \x01(\x0b\x32\x1b.cosmos.tx.v1beta1.ModeInfo\x12\x10\n\x08sequence\x18\x03 \x01(\x04"\x84\x01\n\x08ModeInfo\x12\x34\n\x06single\x18\x01 \x01(\x0b\x32".cosmos.tx.v1beta1.ModeInfo.SingleH\x00\x1a;\n\x06Single\x12\x31\n\x04mode\x18\x01 \x01(\x0e\x32#.cosmos.tx.signing.v1beta1.SignModeB\x05\n\x03sum"\x95\x01\n\x03\x46\x65\x65\x12[\n\x06\x61mount\x18\x01 \x03(\x0b\x32\x19.cosmos.base.v1beta1.CoinB0\xc8\xde\x1f\x00\xaa\xdf\x1f(github.com/cosmos/cosmos-sdk/types.Coins\x12\x11\n\tgas_limit\x18\x02 \x01(\x04\x12\r\n\x05payer\x18\x03 \x01(\t\x12\x0f\n\x07granter\x18\x04 \x01(\tB\'Z%github.com/cosmos/cosmos-sdk/types/txb\x06proto3',
     dependencies=[
         gogo__pb2.DESCRIPTOR,
         coin__pb2.DESCRIPTOR,
@@ -30,7 +30,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
         any__pb2.DESCRIPTOR,
     ],
 )
-
 
 _TX = _descriptor.Descriptor(
     name="Tx",
@@ -110,7 +109,6 @@ _TX = _descriptor.Descriptor(
     serialized_end=194,
 )
 
-
 _TXRAW = _descriptor.Descriptor(
     name="TxRaw",
     full_name="cosmos.tx.v1beta1.TxRaw",
@@ -188,7 +186,6 @@ _TXRAW = _descriptor.Descriptor(
     serialized_start=196,
     serialized_end=268,
 )
-
 
 _SIGNDOC = _descriptor.Descriptor(
     name="SignDoc",
@@ -286,7 +283,6 @@ _SIGNDOC = _descriptor.Descriptor(
     serialized_start=270,
     serialized_end=366,
 )
-
 
 _TXBODY = _descriptor.Descriptor(
     name="TxBody",
@@ -404,7 +400,6 @@ _TXBODY = _descriptor.Descriptor(
     serialized_end=568,
 )
 
-
 _AUTHINFO = _descriptor.Descriptor(
     name="AuthInfo",
     full_name="cosmos.tx.v1beta1.AuthInfo",
@@ -463,7 +458,6 @@ _AUTHINFO = _descriptor.Descriptor(
     serialized_start=570,
     serialized_end=670,
 )
-
 
 _SIGNERINFO = _descriptor.Descriptor(
     name="SignerInfo",
@@ -542,7 +536,6 @@ _SIGNERINFO = _descriptor.Descriptor(
     serialized_start=672,
     serialized_end=792,
 )
-
 
 _MODEINFO_SINGLE = _descriptor.Descriptor(
     name="Single",
@@ -635,7 +628,6 @@ _MODEINFO = _descriptor.Descriptor(
     serialized_end=927,
 )
 
-
 _FEE = _descriptor.Descriptor(
     name="Fee",
     full_name="cosmos.tx.v1beta1.Fee",
@@ -659,7 +651,8 @@ _FEE = _descriptor.Descriptor(
             containing_type=None,
             is_extension=False,
             extension_scope=None,
-            serialized_options=b"\310\336\037\000\252\337\037(github.com/cosmos/cosmos-sdk/types.Coins",
+            serialized_options=
+            b"\310\336\037\000\252\337\037(github.com/cosmos/cosmos-sdk/types.Coins",
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
@@ -737,7 +730,8 @@ _TX.fields_by_name["body"].message_type = _TXBODY
 _TX.fields_by_name["auth_info"].message_type = _AUTHINFO
 _TXBODY.fields_by_name["messages"].message_type = any__pb2._ANY
 _TXBODY.fields_by_name["extension_options"].message_type = any__pb2._ANY
-_TXBODY.fields_by_name["non_critical_extension_options"].message_type = any__pb2._ANY
+_TXBODY.fields_by_name[
+    "non_critical_extension_options"].message_type = any__pb2._ANY
 _AUTHINFO.fields_by_name["signer_infos"].message_type = _SIGNERINFO
 _AUTHINFO.fields_by_name["fee"].message_type = _FEE
 _SIGNERINFO.fields_by_name["public_key"].message_type = any__pb2._ANY
@@ -745,8 +739,10 @@ _SIGNERINFO.fields_by_name["mode_info"].message_type = _MODEINFO
 _MODEINFO_SINGLE.fields_by_name["mode"].enum_type = signing__pb2._SIGNMODE
 _MODEINFO_SINGLE.containing_type = _MODEINFO
 _MODEINFO.fields_by_name["single"].message_type = _MODEINFO_SINGLE
-_MODEINFO.oneofs_by_name["sum"].fields.append(_MODEINFO.fields_by_name["single"])
-_MODEINFO.fields_by_name["single"].containing_oneof = _MODEINFO.oneofs_by_name["sum"]
+_MODEINFO.oneofs_by_name["sum"].fields.append(
+    _MODEINFO.fields_by_name["single"])
+_MODEINFO.fields_by_name["single"].containing_oneof = _MODEINFO.oneofs_by_name[
+    "sum"]
 _FEE.fields_by_name["amount"].message_type = coin__pb2._COIN
 DESCRIPTOR.message_types_by_name["Tx"] = _TX
 DESCRIPTOR.message_types_by_name["TxRaw"] = _TXRAW
@@ -760,7 +756,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Tx = _reflection.GeneratedProtocolMessageType(
     "Tx",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _TX,
         "__module__": "tx_pb2"
@@ -771,7 +767,7 @@ _sym_db.RegisterMessage(Tx)
 
 TxRaw = _reflection.GeneratedProtocolMessageType(
     "TxRaw",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _TXRAW,
         "__module__": "tx_pb2"
@@ -782,7 +778,7 @@ _sym_db.RegisterMessage(TxRaw)
 
 SignDoc = _reflection.GeneratedProtocolMessageType(
     "SignDoc",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _SIGNDOC,
         "__module__": "tx_pb2"
@@ -793,7 +789,7 @@ _sym_db.RegisterMessage(SignDoc)
 
 TxBody = _reflection.GeneratedProtocolMessageType(
     "TxBody",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _TXBODY,
         "__module__": "tx_pb2"
@@ -804,7 +800,7 @@ _sym_db.RegisterMessage(TxBody)
 
 AuthInfo = _reflection.GeneratedProtocolMessageType(
     "AuthInfo",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _AUTHINFO,
         "__module__": "tx_pb2"
@@ -815,7 +811,7 @@ _sym_db.RegisterMessage(AuthInfo)
 
 SignerInfo = _reflection.GeneratedProtocolMessageType(
     "SignerInfo",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _SIGNERINFO,
         "__module__": "tx_pb2"
@@ -826,19 +822,22 @@ _sym_db.RegisterMessage(SignerInfo)
 
 ModeInfo = _reflection.GeneratedProtocolMessageType(
     "ModeInfo",
-    (_message.Message,),
+    (_message.Message, ),
     {
-        "Single": _reflection.GeneratedProtocolMessageType(
+        "Single":
+        _reflection.GeneratedProtocolMessageType(
             "Single",
-            (_message.Message,),
+            (_message.Message, ),
             {
                 "DESCRIPTOR": _MODEINFO_SINGLE,
                 "__module__": "tx_pb2"
                 # @@protoc_insertion_point(class_scope:cosmos.tx.v1beta1.ModeInfo.Single)
             },
         ),
-        "DESCRIPTOR": _MODEINFO,
-        "__module__": "tx_pb2"
+        "DESCRIPTOR":
+        _MODEINFO,
+        "__module__":
+        "tx_pb2"
         # @@protoc_insertion_point(class_scope:cosmos.tx.v1beta1.ModeInfo)
     },
 )
@@ -847,7 +846,7 @@ _sym_db.RegisterMessage(ModeInfo.Single)
 
 Fee = _reflection.GeneratedProtocolMessageType(
     "Fee",
-    (_message.Message,),
+    (_message.Message, ),
     {
         "DESCRIPTOR": _FEE,
         "__module__": "tx_pb2"
@@ -855,7 +854,6 @@ Fee = _reflection.GeneratedProtocolMessageType(
     },
 )
 _sym_db.RegisterMessage(Fee)
-
 
 DESCRIPTOR._options = None
 _FEE.fields_by_name["amount"]._options = None
