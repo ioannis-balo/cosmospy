@@ -10,7 +10,7 @@
 
 > Tools for Cosmos wallet management and offline transaction signing
 
-**Table of Contents**  *generated with [mdformat-toc](https://github.com/hukkin/mdformat-toc)*
+**Table of Contents** _generated with [mdformat-toc](https://github.com/hukkin/mdformat-toc)_
 
 <!-- mdformat-toc start --slug=github --maxlevel=6 --minlevel=2 -->
 
