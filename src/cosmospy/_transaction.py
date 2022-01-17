@@ -50,6 +50,7 @@ class Transaction:
         self._hrp = hrp
         self._sync_mode = sync_mode
         self._tx_body = tx.TxBody()
+        self._tx_body.memo = memo
         self._tx_raw = tx.TxRaw()
 
     def add_transfer(
